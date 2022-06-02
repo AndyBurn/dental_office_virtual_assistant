@@ -1,0 +1,18 @@
+{
+    "name": "dental-office-virtual-assistant",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "name": "dental-office-virtual-assistant",
+            "id": "1c017980-e281-11ec-afec-77fc7095e832",
+            "appId": "8f2fca98-ac9f-4f09-a1fc-b20e6e1631a5",
+            "appPassword": "k%}uv1ZUOc$Ld3Aeo(Ah7le]Hpn!/",
+            "endpoint": "https://locahost:3978/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "path": "C:\\Users\\Gachanja\\Documents\\Cloud\\AI Engineer Projects\\Project_II\\Dental_Office_Virtual_Assistant\\dental-office-virtual-assistant.bot",
+    "overrides": null
+}
