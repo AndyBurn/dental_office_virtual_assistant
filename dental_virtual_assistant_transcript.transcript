@@ -1,0 +1,1718 @@
+[
+  {
+    "type": "conversationUpdate",
+    "membersAdded": [
+      {
+        "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+        "name": "Bot"
+      },
+      {
+        "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+        "name": "User"
+      }
+    ],
+    "membersRemoved": [],
+    "channelId": "emulator",
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "id": "9a36c620-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:47:30+03:00",
+    "recipient": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "timestamp": "2022-06-02T21:47:30.561Z",
+    "from": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "serviceUrl": "http://localhost:4274"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "text": "Welcome to Contoso Dentistry. You can ask me any question about your dental session.",
+    "speak": "Welcome to Contoso Dentistry. You can ask me any question about your dental session.",
+    "inputHint": "acceptingInput",
+    "replyToId": "9a36c620-e2bd-11ec-8587-718ad59c0fba",
+    "id": "9a3f0380-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:47:30+03:00",
+    "timestamp": "2022-06-02T21:47:30.615Z"
+  },
+  {
+    "channelData": {
+      "clientActivityID": "16542064688672iwpajfk864",
+      "clientTimestamp": "2022-06-02T21:47:48.867Z"
+    },
+    "text": "Do you treat children?",
+    "textFormat": "plain",
+    "type": "message",
+    "channelId": "emulator",
+    "from": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "timestamp": "2022-06-02T21:47:48.949Z",
+    "entities": [
+      {
+        "requiresBotState": true,
+        "supportsListening": true,
+        "supportsTts": true,
+        "type": "ClientCapabilities"
+      }
+    ],
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "id": "a52c6850-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:47:48+03:00",
+    "recipient": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:4274"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "a52c6850-e2bd-11ec-8587-718ad59c0fba",
+    "label": "LuisV3 Trace",
+    "valueType": "https://www.luis.ai/schemas/trace",
+    "value": {
+      "recognizerResult": {
+        "text": "Do you treat children?",
+        "intents": {
+          "ScheduleAppointment": {
+            "score": 0.1796776
+          }
+        },
+        "entities": {
+          "$instance": {}
+        },
+        "luisResult": {
+          "query": "Do you treat children?",
+          "prediction": {
+            "topIntent": "ScheduleAppointment",
+            "intents": {
+              "ScheduleAppointment": {
+                "score": 0.1796776
+              }
+            },
+            "entities": {}
+          }
+        }
+      },
+      "luisResult": {
+        "topIntent": "ScheduleAppointment",
+        "intents": {
+          "ScheduleAppointment": {
+            "score": 0.1796776
+          }
+        },
+        "entities": {}
+      },
+      "luisOptions": {
+        "includeAllIntents": false,
+        "includeInstanceData": true,
+        "log": true,
+        "preferExternalEntities": true,
+        "datetimeReference": "",
+        "slot": "production",
+        "telemetryClient": {},
+        "logPersonalInformation": false,
+        "includeAPIResults": true,
+        "apiVersion": "v3"
+      },
+      "luisModel": {
+        "ModelID": "1bc17704-6232-4158-9816-bba3dae6b74a"
+      }
+    },
+    "name": "LuisRecognizer",
+    "id": "a5c88140-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:47:49+03:00",
+    "timestamp": "2022-06-02T21:47:49.971Z"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "a52c6850-e2bd-11ec-8587-718ad59c0fba",
+    "label": "QnAMaker Trace",
+    "valueType": "https://www.qnamaker.ai/schemas/trace",
+    "value": {
+      "message": {
+        "channelData": {
+          "clientActivityID": "16542064688672iwpajfk864",
+          "clientTimestamp": "2022-06-02T21:47:48.867Z"
+        },
+        "text": "Do you treat children?",
+        "textFormat": "plain",
+        "type": "message",
+        "channelId": "emulator",
+        "from": {
+          "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+          "name": "User",
+          "role": "user"
+        },
+        "locale": "en-US",
+        "timestamp": "2022-06-02T21:47:48.949Z",
+        "entities": [
+          {
+            "requiresBotState": true,
+            "supportsListening": true,
+            "supportsTts": true,
+            "type": "ClientCapabilities"
+          }
+        ],
+        "conversation": {
+          "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+        },
+        "id": "a52c6850-e2bd-11ec-8587-718ad59c0fba",
+        "localTimestamp": "2022-06-02T21:47:48.000Z",
+        "recipient": {
+          "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+          "name": "Bot",
+          "role": "bot"
+        },
+        "serviceUrl": "http://localhost:4274",
+        "rawTimestamp": "2022-06-02T21:47:48.949Z",
+        "rawLocalTimestamp": "2022-06-03T00:47:48+03:00",
+        "callerId": "urn:botframework:azure"
+      },
+      "queryResults": [
+        {
+          "questions": [
+            "Can you treat my child?",
+            "What is the youngest patient you accept?",
+            "Can I bring my 6 year old?",
+            "Do you treat children?"
+          ],
+          "answer": "We treat patients ages 6+. Patients under 18 must be accompanied by a parent or legal guardian.",
+          "score": 1,
+          "id": 1,
+          "source": "FAQ.tsv",
+          "isDocumentText": false,
+          "metadata": [],
+          "context": {
+            "isContextOnly": false,
+            "prompts": []
+          }
+        }
+      ],
+      "knowledgeBaseId": "2d475b46-b46e-45a9-bb61-1444f5edc351",
+      "scoreThreshold": 0.3,
+      "top": 1,
+      "strictFilters": [],
+      "metadataBoost": []
+    },
+    "name": "QnAMaker",
+    "id": "a6bec820-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:47:51+03:00",
+    "timestamp": "2022-06-02T21:47:51.585Z"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "text": "We treat patients ages 6+. Patients under 18 must be accompanied by a parent or legal guardian.",
+    "inputHint": "acceptingInput",
+    "replyToId": "a52c6850-e2bd-11ec-8587-718ad59c0fba",
+    "id": "a6c5a5f0-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:47:51+03:00",
+    "timestamp": "2022-06-02T21:47:51.631Z"
+  },
+  {
+    "channelData": {
+      "clientActivityID": "16542064908389qlryulzp7n",
+      "clientTimestamp": "2022-06-02T21:48:10.838Z"
+    },
+    "text": "Do you accept new patients?",
+    "textFormat": "plain",
+    "type": "message",
+    "channelId": "emulator",
+    "from": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "timestamp": "2022-06-02T21:48:11.002Z",
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "id": "b2516da0-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:48:11+03:00",
+    "recipient": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:4274"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "b2516da0-e2bd-11ec-8587-718ad59c0fba",
+    "label": "LuisV3 Trace",
+    "valueType": "https://www.luis.ai/schemas/trace",
+    "value": {
+      "recognizerResult": {
+        "text": "Do you accept new patients?",
+        "intents": {
+          "ScheduleAppointment": {
+            "score": 0.21090643
+          }
+        },
+        "entities": {
+          "$instance": {}
+        },
+        "luisResult": {
+          "query": "Do you accept new patients?",
+          "prediction": {
+            "topIntent": "ScheduleAppointment",
+            "intents": {
+              "ScheduleAppointment": {
+                "score": 0.21090643
+              }
+            },
+            "entities": {}
+          }
+        }
+      },
+      "luisResult": {
+        "topIntent": "ScheduleAppointment",
+        "intents": {
+          "ScheduleAppointment": {
+            "score": 0.21090643
+          }
+        },
+        "entities": {}
+      },
+      "luisOptions": {
+        "includeAllIntents": false,
+        "includeInstanceData": true,
+        "log": true,
+        "preferExternalEntities": true,
+        "datetimeReference": "",
+        "slot": "production",
+        "telemetryClient": {},
+        "logPersonalInformation": false,
+        "includeAPIResults": true,
+        "apiVersion": "v3"
+      },
+      "luisModel": {
+        "ModelID": "1bc17704-6232-4158-9816-bba3dae6b74a"
+      }
+    },
+    "name": "LuisRecognizer",
+    "id": "b3138520-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:48:12+03:00",
+    "timestamp": "2022-06-02T21:48:12.274Z"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "b2516da0-e2bd-11ec-8587-718ad59c0fba",
+    "label": "QnAMaker Trace",
+    "valueType": "https://www.qnamaker.ai/schemas/trace",
+    "value": {
+      "message": {
+        "channelData": {
+          "clientActivityID": "16542064908389qlryulzp7n",
+          "clientTimestamp": "2022-06-02T21:48:10.838Z"
+        },
+        "text": "Do you accept new patients?",
+        "textFormat": "plain",
+        "type": "message",
+        "channelId": "emulator",
+        "from": {
+          "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+          "name": "User",
+          "role": "user"
+        },
+        "locale": "en-US",
+        "timestamp": "2022-06-02T21:48:11.002Z",
+        "conversation": {
+          "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+        },
+        "id": "b2516da0-e2bd-11ec-8587-718ad59c0fba",
+        "localTimestamp": "2022-06-02T21:48:11.000Z",
+        "recipient": {
+          "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+          "name": "Bot",
+          "role": "bot"
+        },
+        "serviceUrl": "http://localhost:4274",
+        "rawTimestamp": "2022-06-02T21:48:11.002Z",
+        "rawLocalTimestamp": "2022-06-03T00:48:11+03:00",
+        "callerId": "urn:botframework:azure"
+      },
+      "queryResults": [
+        {
+          "questions": [
+            "Are you accepting new patients?"
+          ],
+          "answer": "We are always accepting new patients. We're excited to meet you!",
+          "score": 0.95,
+          "id": 2,
+          "source": "FAQ.tsv",
+          "isDocumentText": false,
+          "metadata": [],
+          "context": {
+            "isContextOnly": false,
+            "prompts": []
+          }
+        }
+      ],
+      "knowledgeBaseId": "2d475b46-b46e-45a9-bb61-1444f5edc351",
+      "scoreThreshold": 0.3,
+      "top": 1,
+      "strictFilters": [],
+      "metadataBoost": []
+    },
+    "name": "QnAMaker",
+    "id": "b3ea5d20-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:48:13+03:00",
+    "timestamp": "2022-06-02T21:48:13.682Z"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "text": "We are always accepting new patients. We're excited to meet you!",
+    "inputHint": "acceptingInput",
+    "replyToId": "b2516da0-e2bd-11ec-8587-718ad59c0fba",
+    "id": "b406e5d0-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:48:13+03:00",
+    "timestamp": "2022-06-02T21:48:13.869Z"
+  },
+  {
+    "channelData": {
+      "clientActivityID": "1654206518509j1dtz0fjpj",
+      "clientTimestamp": "2022-06-02T21:48:38.509Z"
+    },
+    "text": "I don't have insurance. Is that a problem?",
+    "textFormat": "plain",
+    "type": "message",
+    "channelId": "emulator",
+    "from": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "timestamp": "2022-06-02T21:48:38.671Z",
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "id": "c2cf61f0-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:48:38+03:00",
+    "recipient": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:4274"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "c2cf61f0-e2bd-11ec-8587-718ad59c0fba",
+    "label": "LuisV3 Trace",
+    "valueType": "https://www.luis.ai/schemas/trace",
+    "value": {
+      "recognizerResult": {
+        "text": "I don't have insurance. Is that a problem?",
+        "intents": {
+          "ScheduleAppointment": {
+            "score": 0.26328036
+          }
+        },
+        "entities": {
+          "$instance": {}
+        },
+        "luisResult": {
+          "query": "I don't have insurance. Is that a problem?",
+          "prediction": {
+            "topIntent": "ScheduleAppointment",
+            "intents": {
+              "ScheduleAppointment": {
+                "score": 0.26328036
+              }
+            },
+            "entities": {}
+          }
+        }
+      },
+      "luisResult": {
+        "topIntent": "ScheduleAppointment",
+        "intents": {
+          "ScheduleAppointment": {
+            "score": 0.26328036
+          }
+        },
+        "entities": {}
+      },
+      "luisOptions": {
+        "includeAllIntents": false,
+        "includeInstanceData": true,
+        "log": true,
+        "preferExternalEntities": true,
+        "datetimeReference": "",
+        "slot": "production",
+        "telemetryClient": {},
+        "logPersonalInformation": false,
+        "includeAPIResults": true,
+        "apiVersion": "v3"
+      },
+      "luisModel": {
+        "ModelID": "1bc17704-6232-4158-9816-bba3dae6b74a"
+      }
+    },
+    "name": "LuisRecognizer",
+    "id": "c380b090-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:48:39+03:00",
+    "timestamp": "2022-06-02T21:48:39.833Z"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "c2cf61f0-e2bd-11ec-8587-718ad59c0fba",
+    "label": "QnAMaker Trace",
+    "valueType": "https://www.qnamaker.ai/schemas/trace",
+    "value": {
+      "message": {
+        "channelData": {
+          "clientActivityID": "1654206518509j1dtz0fjpj",
+          "clientTimestamp": "2022-06-02T21:48:38.509Z"
+        },
+        "text": "I don't have insurance. Is that a problem?",
+        "textFormat": "plain",
+        "type": "message",
+        "channelId": "emulator",
+        "from": {
+          "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+          "name": "User",
+          "role": "user"
+        },
+        "locale": "en-US",
+        "timestamp": "2022-06-02T21:48:38.671Z",
+        "conversation": {
+          "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+        },
+        "id": "c2cf61f0-e2bd-11ec-8587-718ad59c0fba",
+        "localTimestamp": "2022-06-02T21:48:38.000Z",
+        "recipient": {
+          "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+          "name": "Bot",
+          "role": "bot"
+        },
+        "serviceUrl": "http://localhost:4274",
+        "rawTimestamp": "2022-06-02T21:48:38.671Z",
+        "rawLocalTimestamp": "2022-06-03T00:48:38+03:00",
+        "callerId": "urn:botframework:azure"
+      },
+      "queryResults": [
+        {
+          "questions": [
+            "What if I don't have insurance?",
+            "I don't have insurance. Is that a problem?",
+            "Can I be seen if I don't have insurance?"
+          ],
+          "answer": "We accept patients no matter their insurance situation. There are many payment options available to you!",
+          "score": 1,
+          "id": 3,
+          "source": "FAQ.tsv",
+          "isDocumentText": false,
+          "metadata": [],
+          "context": {
+            "isContextOnly": false,
+            "prompts": []
+          }
+        }
+      ],
+      "knowledgeBaseId": "2d475b46-b46e-45a9-bb61-1444f5edc351",
+      "scoreThreshold": 0.3,
+      "top": 1,
+      "strictFilters": [],
+      "metadataBoost": []
+    },
+    "name": "QnAMaker",
+    "id": "c4a1d800-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:48:41+03:00",
+    "timestamp": "2022-06-02T21:48:41.728Z"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "text": "We accept patients no matter their insurance situation. There are many payment options available to you!",
+    "inputHint": "acceptingInput",
+    "replyToId": "c2cf61f0-e2bd-11ec-8587-718ad59c0fba",
+    "id": "c4b2ef00-e2bd-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:48:41+03:00",
+    "timestamp": "2022-06-02T21:48:41.839Z"
+  },
+  {
+    "channelData": {
+      "clientActivityID": "1654206675914kn79q343tva",
+      "clientTimestamp": "2022-06-02T21:51:15.915Z"
+    },
+    "text": "I have a toothache. I need to see the dentist tomorrow morning, at 9:30am.",
+    "textFormat": "plain",
+    "type": "message",
+    "channelId": "emulator",
+    "from": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "timestamp": "2022-06-02T21:51:16.112Z",
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "id": "20a6f900-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:51:16+03:00",
+    "recipient": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:4274"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "20a6f900-e2be-11ec-8587-718ad59c0fba",
+    "label": "LuisV3 Trace",
+    "valueType": "https://www.luis.ai/schemas/trace",
+    "value": {
+      "recognizerResult": {
+        "text": "I have a toothache. I need to see the dentist tomorrow morning, at 9:30am.",
+        "intents": {
+          "GetAvailability": {
+            "score": 0.91076016
+          }
+        },
+        "entities": {
+          "time": [
+            "9:30am"
+          ],
+          "$instance": {
+            "time": [
+              {
+                "type": "time",
+                "text": "9:30am",
+                "startIndex": 67,
+                "endIndex": 73,
+                "modelType": "Entity Extractor",
+                "recognitionSources": [
+                  "model"
+                ]
+              }
+            ]
+          }
+        },
+        "luisResult": {
+          "query": "I have a toothache. I need to see the dentist tomorrow morning, at 9:30am.",
+          "prediction": {
+            "topIntent": "GetAvailability",
+            "intents": {
+              "GetAvailability": {
+                "score": 0.91076016
+              }
+            },
+            "entities": {
+              "time": [
+                "9:30am"
+              ],
+              "$instance": {
+                "time": [
+                  {
+                    "type": "time",
+                    "text": "9:30am",
+                    "startIndex": 67,
+                    "length": 6,
+                    "modelTypeId": 1,
+                    "modelType": "Entity Extractor",
+                    "recognitionSources": [
+                      "model"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "luisResult": {
+        "topIntent": "GetAvailability",
+        "intents": {
+          "GetAvailability": {
+            "score": 0.91076016
+          }
+        },
+        "entities": {
+          "time": [
+            "9:30am"
+          ],
+          "$instance": {
+            "time": [
+              {
+                "type": "time",
+                "text": "9:30am",
+                "startIndex": 67,
+                "length": 6,
+                "modelTypeId": 1,
+                "modelType": "Entity Extractor",
+                "recognitionSources": [
+                  "model"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "luisOptions": {
+        "includeAllIntents": false,
+        "includeInstanceData": true,
+        "log": true,
+        "preferExternalEntities": true,
+        "datetimeReference": "",
+        "slot": "production",
+        "telemetryClient": {},
+        "logPersonalInformation": false,
+        "includeAPIResults": true,
+        "apiVersion": "v3"
+      },
+      "luisModel": {
+        "ModelID": "1bc17704-6232-4158-9816-bba3dae6b74a"
+      }
+    },
+    "name": "LuisRecognizer",
+    "id": "2171c310-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:51:17+03:00",
+    "timestamp": "2022-06-02T21:51:17.441Z"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "20a6f900-e2be-11ec-8587-718ad59c0fba",
+    "label": "QnAMaker Trace",
+    "valueType": "https://www.qnamaker.ai/schemas/trace",
+    "value": {
+      "message": {
+        "channelData": {
+          "clientActivityID": "1654206675914kn79q343tva",
+          "clientTimestamp": "2022-06-02T21:51:15.915Z"
+        },
+        "text": "I have a toothache. I need to see the dentist tomorrow morning, at 9:30am.",
+        "textFormat": "plain",
+        "type": "message",
+        "channelId": "emulator",
+        "from": {
+          "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+          "name": "User",
+          "role": "user"
+        },
+        "locale": "en-US",
+        "timestamp": "2022-06-02T21:51:16.112Z",
+        "conversation": {
+          "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+        },
+        "id": "20a6f900-e2be-11ec-8587-718ad59c0fba",
+        "localTimestamp": "2022-06-02T21:51:16.000Z",
+        "recipient": {
+          "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+          "name": "Bot",
+          "role": "bot"
+        },
+        "serviceUrl": "http://localhost:4274",
+        "rawTimestamp": "2022-06-02T21:51:16.112Z",
+        "rawLocalTimestamp": "2022-06-03T00:51:16+03:00",
+        "callerId": "urn:botframework:azure"
+      },
+      "queryResults": [
+        {
+          "questions": [
+            "Have yourself a good night",
+            "Pleasant dreams",
+            "Don't let the bedbugs bite",
+            "I'm going to sleep",
+            "I'm going to bed",
+            "I'm turning in",
+            "See you tomorrow morning",
+            "Night",
+            "Good night bot",
+            "Shutting down for the night",
+            "I'm headed off to sleep",
+            "I'm headed off to bed",
+            "I am heading to sleep",
+            "I am heading to bed",
+            "I am headed to bed",
+            "Buenas noches",
+            "Have yourself a lovely night",
+            "I'm heading to sleep",
+            "Have a good night bot",
+            "Have a good night",
+            "Good night to you",
+            "Good night",
+            "G'night",
+            "Hope you have a good night",
+            "Nighty night, don't let the bed bugs bite",
+            "Time to sleep",
+            "Time to go to sleep",
+            "Time for bed",
+            "Sweet dreams",
+            "Sleep well",
+            "I'm headed to bed",
+            "I'm heading to bed",
+            "Nighty night",
+            "Nighters",
+            "Night bot",
+            "I'm turning in for the night",
+            "I'm shutting down for the night",
+            "Time to turn in",
+            "See you in the morning"
+          ],
+          "answer": "Good night.",
+          "score": 0.4836,
+          "id": 60,
+          "source": "qna_chitchat_Professional.tsv",
+          "isDocumentText": false,
+          "metadata": [
+            {
+              "name": "editorial",
+              "value": "chitchat"
+            }
+          ],
+          "context": {
+            "isContextOnly": false,
+            "prompts": []
+          }
+        }
+      ],
+      "knowledgeBaseId": "2d475b46-b46e-45a9-bb61-1444f5edc351",
+      "scoreThreshold": 0.3,
+      "top": 1,
+      "strictFilters": [],
+      "metadataBoost": []
+    },
+    "name": "QnAMaker",
+    "id": "22a253d0-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:51:19+03:00",
+    "timestamp": "2022-06-02T21:51:19.437Z"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "text": "Good night.",
+    "inputHint": "acceptingInput",
+    "replyToId": "20a6f900-e2be-11ec-8587-718ad59c0fba",
+    "id": "22a9f4f0-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:51:19+03:00",
+    "timestamp": "2022-06-02T21:51:19.487Z"
+  },
+  {
+    "channelData": {
+      "clientActivityID": "1654206734768kjvnwfozya",
+      "clientTimestamp": "2022-06-02T21:52:14.770Z"
+    },
+    "text": "Can I see the dentist on 5th of June?",
+    "textFormat": "plain",
+    "type": "message",
+    "channelId": "emulator",
+    "from": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "timestamp": "2022-06-02T21:52:14.978Z",
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "id": "43bd3620-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:52:14+03:00",
+    "recipient": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:4274"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "43bd3620-e2be-11ec-8587-718ad59c0fba",
+    "label": "LuisV3 Trace",
+    "valueType": "https://www.luis.ai/schemas/trace",
+    "value": {
+      "recognizerResult": {
+        "text": "Can I see the dentist on 5th of June?",
+        "intents": {
+          "GetAvailability": {
+            "score": 0.70068836
+          }
+        },
+        "entities": {
+          "date": [
+            "5th of June"
+          ],
+          "$instance": {
+            "date": [
+              {
+                "type": "date",
+                "text": "5th of June",
+                "startIndex": 25,
+                "endIndex": 36,
+                "modelType": "Entity Extractor",
+                "recognitionSources": [
+                  "model"
+                ]
+              }
+            ]
+          }
+        },
+        "luisResult": {
+          "query": "Can I see the dentist on 5th of June?",
+          "prediction": {
+            "topIntent": "GetAvailability",
+            "intents": {
+              "GetAvailability": {
+                "score": 0.70068836
+              }
+            },
+            "entities": {
+              "date": [
+                "5th of June"
+              ],
+              "$instance": {
+                "date": [
+                  {
+                    "type": "date",
+                    "text": "5th of June",
+                    "startIndex": 25,
+                    "length": 11,
+                    "modelTypeId": 1,
+                    "modelType": "Entity Extractor",
+                    "recognitionSources": [
+                      "model"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "luisResult": {
+        "topIntent": "GetAvailability",
+        "intents": {
+          "GetAvailability": {
+            "score": 0.70068836
+          }
+        },
+        "entities": {
+          "date": [
+            "5th of June"
+          ],
+          "$instance": {
+            "date": [
+              {
+                "type": "date",
+                "text": "5th of June",
+                "startIndex": 25,
+                "length": 11,
+                "modelTypeId": 1,
+                "modelType": "Entity Extractor",
+                "recognitionSources": [
+                  "model"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "luisOptions": {
+        "includeAllIntents": false,
+        "includeInstanceData": true,
+        "log": true,
+        "preferExternalEntities": true,
+        "datetimeReference": "",
+        "slot": "production",
+        "telemetryClient": {},
+        "logPersonalInformation": false,
+        "includeAPIResults": true,
+        "apiVersion": "v3"
+      },
+      "luisModel": {
+        "ModelID": "1bc17704-6232-4158-9816-bba3dae6b74a"
+      }
+    },
+    "name": "LuisRecognizer",
+    "id": "444f8b10-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:52:15+03:00",
+    "timestamp": "2022-06-02T21:52:15.937Z"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "text": "The dentist will be available on 5th of June.",
+    "inputHint": "acceptingInput",
+    "replyToId": "43bd3620-e2be-11ec-8587-718ad59c0fba",
+    "id": "44515fd0-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:52:15+03:00",
+    "timestamp": "2022-06-02T21:52:15.948Z"
+  },
+  {
+    "channelData": {
+      "clientActivityID": "1654206830813h8786zwhb98",
+      "clientTimestamp": "2022-06-02T21:53:50.813Z"
+    },
+    "text": "Can I book an appointment at 3:15pm on 12th of June?",
+    "textFormat": "plain",
+    "type": "message",
+    "channelId": "emulator",
+    "from": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "timestamp": "2022-06-02T21:53:51.046Z",
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "id": "7d000660-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:53:51+03:00",
+    "recipient": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:4274"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "7d000660-e2be-11ec-8587-718ad59c0fba",
+    "label": "LuisV3 Trace",
+    "valueType": "https://www.luis.ai/schemas/trace",
+    "value": {
+      "recognizerResult": {
+        "text": "Can I book an appointment at 3:15pm on 12th of June?",
+        "intents": {
+          "ScheduleAppointment": {
+            "score": 0.9253751
+          }
+        },
+        "entities": {
+          "time": [
+            "3:15pm"
+          ],
+          "$instance": {
+            "time": [
+              {
+                "type": "time",
+                "text": "3:15pm",
+                "startIndex": 29,
+                "endIndex": 35,
+                "modelType": "Entity Extractor",
+                "recognitionSources": [
+                  "model"
+                ]
+              }
+            ]
+          }
+        },
+        "luisResult": {
+          "query": "Can I book an appointment at 3:15pm on 12th of June?",
+          "prediction": {
+            "topIntent": "ScheduleAppointment",
+            "intents": {
+              "ScheduleAppointment": {
+                "score": 0.9253751
+              }
+            },
+            "entities": {
+              "time": [
+                "3:15pm"
+              ],
+              "$instance": {
+                "time": [
+                  {
+                    "type": "time",
+                    "text": "3:15pm",
+                    "startIndex": 29,
+                    "length": 6,
+                    "modelTypeId": 1,
+                    "modelType": "Entity Extractor",
+                    "recognitionSources": [
+                      "model"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "luisResult": {
+        "topIntent": "ScheduleAppointment",
+        "intents": {
+          "ScheduleAppointment": {
+            "score": 0.9253751
+          }
+        },
+        "entities": {
+          "time": [
+            "3:15pm"
+          ],
+          "$instance": {
+            "time": [
+              {
+                "type": "time",
+                "text": "3:15pm",
+                "startIndex": 29,
+                "length": 6,
+                "modelTypeId": 1,
+                "modelType": "Entity Extractor",
+                "recognitionSources": [
+                  "model"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "luisOptions": {
+        "includeAllIntents": false,
+        "includeInstanceData": true,
+        "log": true,
+        "preferExternalEntities": true,
+        "datetimeReference": "",
+        "slot": "production",
+        "telemetryClient": {},
+        "logPersonalInformation": false,
+        "includeAPIResults": true,
+        "apiVersion": "v3"
+      },
+      "luisModel": {
+        "ModelID": "1bc17704-6232-4158-9816-bba3dae6b74a"
+      }
+    },
+    "name": "LuisRecognizer",
+    "id": "7d9c1f50-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:53:52+03:00",
+    "timestamp": "2022-06-02T21:53:52.069Z"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "text": "You can book an appointment at 3:15pm.",
+    "inputHint": "acceptingInput",
+    "replyToId": "7d000660-e2be-11ec-8587-718ad59c0fba",
+    "id": "7d9dcd00-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:53:52+03:00",
+    "timestamp": "2022-06-02T21:53:52.080Z"
+  },
+  {
+    "channelData": {
+      "clientActivityID": "1654206925350t3ti511xcn",
+      "clientTimestamp": "2022-06-02T21:55:25.350Z"
+    },
+    "text": "Will the dentist be available for an appointment on 17th June at 15:30pm?",
+    "textFormat": "plain",
+    "type": "message",
+    "channelId": "emulator",
+    "from": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "name": "User",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "timestamp": "2022-06-02T21:55:25.730Z",
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "id": "b56fa820-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:55:25+03:00",
+    "recipient": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "serviceUrl": "http://localhost:4274"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "b56fa820-e2be-11ec-8587-718ad59c0fba",
+    "label": "LuisV3 Trace",
+    "valueType": "https://www.luis.ai/schemas/trace",
+    "value": {
+      "recognizerResult": {
+        "text": "Will the dentist be available for an appointment on 17th June at 15:30pm?",
+        "intents": {
+          "ScheduleAppointment": {
+            "score": 0.8649463
+          }
+        },
+        "entities": {
+          "$instance": {}
+        },
+        "luisResult": {
+          "query": "Will the dentist be available for an appointment on 17th June at 15:30pm?",
+          "prediction": {
+            "topIntent": "ScheduleAppointment",
+            "intents": {
+              "ScheduleAppointment": {
+                "score": 0.8649463
+              }
+            },
+            "entities": {}
+          }
+        }
+      },
+      "luisResult": {
+        "topIntent": "ScheduleAppointment",
+        "intents": {
+          "ScheduleAppointment": {
+            "score": 0.8649463
+          }
+        },
+        "entities": {}
+      },
+      "luisOptions": {
+        "includeAllIntents": false,
+        "includeInstanceData": true,
+        "log": true,
+        "preferExternalEntities": true,
+        "datetimeReference": "",
+        "slot": "production",
+        "telemetryClient": {},
+        "logPersonalInformation": false,
+        "includeAPIResults": true,
+        "apiVersion": "v3"
+      },
+      "luisModel": {
+        "ModelID": "1bc17704-6232-4158-9816-bba3dae6b74a"
+      }
+    },
+    "name": "LuisRecognizer",
+    "id": "b622cb80-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:55:26+03:00",
+    "timestamp": "2022-06-02T21:55:26.904Z"
+  },
+  {
+    "type": "trace",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "replyToId": "b56fa820-e2be-11ec-8587-718ad59c0fba",
+    "label": "QnAMaker Trace",
+    "valueType": "https://www.qnamaker.ai/schemas/trace",
+    "value": {
+      "message": {
+        "channelData": {
+          "clientActivityID": "1654206925350t3ti511xcn",
+          "clientTimestamp": "2022-06-02T21:55:25.350Z"
+        },
+        "text": "Will the dentist be available for an appointment on 17th June at 15:30pm?",
+        "textFormat": "plain",
+        "type": "message",
+        "channelId": "emulator",
+        "from": {
+          "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+          "name": "User",
+          "role": "user"
+        },
+        "locale": "en-US",
+        "timestamp": "2022-06-02T21:55:25.730Z",
+        "conversation": {
+          "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+        },
+        "id": "b56fa820-e2be-11ec-8587-718ad59c0fba",
+        "localTimestamp": "2022-06-02T21:55:25.000Z",
+        "recipient": {
+          "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+          "name": "Bot",
+          "role": "bot"
+        },
+        "serviceUrl": "http://localhost:4274",
+        "rawTimestamp": "2022-06-02T21:55:25.730Z",
+        "rawLocalTimestamp": "2022-06-03T00:55:25+03:00",
+        "callerId": "urn:botframework:azure"
+      },
+      "queryResults": [
+        {
+          "questions": [
+            "I would love to be your best friend.",
+            "You're my bestie",
+            "We're friends forever",
+            "Are we best friends?",
+            "I'd like it if we could be pals.",
+            "I would love to be your buddy.",
+            "Are you my friend?",
+            "Will you be my friend?",
+            "I would love to be your BFF",
+            "Can we be BFFs?",
+            "I'd like to be your bud.",
+            "I'd like it if we could be BFFs",
+            "I'd like it if we could be best friends.",
+            "I would love to be your pal.",
+            "I would love to be your friend.",
+            "I'd like it if we could be buds.",
+            "I'd like it if we could be friends.",
+            "I would like to be your pal.",
+            "I would like to be your friend.",
+            "I would like to be your buddy.",
+            "I would like to be your bud.",
+            "I would like to be your BFF",
+            "I would like to be your best friend.",
+            "I want to be your pal.",
+            "I would love to be your bud.",
+            "I'd like to be best buds.",
+            "I'd like to be your best friend.",
+            "I'd like to be pals.",
+            "I'd like to be friends.",
+            "I'd like to be buds.",
+            "I'd like to be buddies.",
+            "I'd like it if we could be buddies.",
+            "I'd like to be best friends.",
+            "I want to be your best friend.",
+            "I'd like it if you could be my pal.",
+            "I'd like it if you could be my friend.",
+            "I'd like it if you could be my buddy.",
+            "I'd like it if you could be my bud.",
+            "I'd like it if you could be my BFF",
+            "I'd like it if you could be my best friend.",
+            "I'd like to be BFFs",
+            "Are you my buddy?",
+            "Best friends?",
+            "Best buds?",
+            "Be my pal?",
+            "Be my friend?",
+            "Be friends with me",
+            "Are you my pal?",
+            "I want to be your friend.",
+            "Buddies?",
+            "Are you my best friend?",
+            "Are we the best of friends?",
+            "Are we pals?",
+            "Are we great friends?",
+            "Are we friends?",
+            "Are we friends forever?",
+            "Are we BFFs?",
+            "Are you my imaginary friend?",
+            "I'd like to be your buddy.",
+            "I want to be buddies",
+            "Friends?",
+            "Can you be my pal?",
+            "Can you be my friend?",
+            "Can you be my BFF?",
+            "Can you be my best friend?",
+            "BFFs forever?",
+            "Can we be buddies?",
+            "BFFs?",
+            "Can we be besties?",
+            "Can we be best friends?",
+            "Can I be your pal?",
+            "Can I be your friend?",
+            "Can I be your BFF?",
+            "Can I be your best friend?",
+            "I want to be your BFF",
+            "Can we be friends?",
+            "Will you be my pal?",
+            "I'd like to be your BFF",
+            "You are my friend",
+            "You are my BFF",
+            "You are my best friend",
+            "Won't you be my pal?",
+            "Won't you be my friend?",
+            "Won't you be my best friend?",
+            "Am I your best friend?",
+            "Will you be my buddy?",
+            "Will you be my BFF?",
+            "Will you be my best friend?",
+            "Will you be my best bud?",
+            "Pals?",
+            "Let's be pals",
+            "Won't you be my BFF?",
+            "You're a pal",
+            "Do you want to be BFFs?",
+            "Do you want to be besties?",
+            "Do you want to be pals?",
+            "Do you want to be friends?",
+            "Will  you be my bestie?",
+            "We're best buds",
+            "You are my pal",
+            "We're buddies",
+            "Let's be BFFs",
+            "We're besties",
+            "We're friends",
+            "We're BFFs",
+            "We're pals",
+            "Are we besties?",
+            "Am I your bestie?",
+            "You're my best bed",
+            "I'd like you to be my pal.",
+            "I'd love it if you could be my BFF",
+            "I'd love it if you could be my best friend.",
+            "I'd love it if we could be pals.",
+            "I'd love it if we could be friends.",
+            "I'd love it if we could be buds.",
+            "I'd love it if we could be buddies.",
+            "Let's be friends",
+            "I'd love it if we could be best friends.",
+            "I'd love it if you could be my friend.",
+            "I'd like you to be my friend.",
+            "I'd like you to be my buddy.",
+            "I'd like you to be my bud.",
+            "I'd like you to be my BFF",
+            "I'd like you to be my best friend.",
+            "I'd like to be your pal.",
+            "I'd like to be your friend.",
+            "I'd love it if we could be BFFs",
+            "I'd love to be your pal.",
+            "Do you want to be my friend?",
+            "Let's be besties",
+            "Let's be best friends",
+            "I'd love you to be my pal.",
+            "I'd love you to be my friend.",
+            "I'd love you to be my buddy.",
+            "I'd love you to be my bud.",
+            "I'd love it if you could be my bud.",
+            "I'd love you to be my best friend.",
+            "I'd love it if you could be my buddy.",
+            "I'd love to be your friend.",
+            "I'd love to be your buddy.",
+            "I'd love to be your bud.",
+            "I'd love to be your BFF",
+            "I'd love to be your best friend.",
+            "I'd love it if you could be my pal.",
+            "Let's be buddies",
+            "I'd love you to be my BFF"
+          ],
+          "answer": "Certainly.",
+          "score": 0.3165,
+          "id": 68,
+          "source": "qna_chitchat_Professional.tsv",
+          "isDocumentText": false,
+          "metadata": [
+            {
+              "name": "editorial",
+              "value": "chitchat"
+            }
+          ],
+          "context": {
+            "isContextOnly": false,
+            "prompts": []
+          }
+        }
+      ],
+      "knowledgeBaseId": "2d475b46-b46e-45a9-bb61-1444f5edc351",
+      "scoreThreshold": 0.3,
+      "top": 1,
+      "strictFilters": [],
+      "metadataBoost": []
+    },
+    "name": "QnAMaker",
+    "id": "b769a360-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:55:29+03:00",
+    "timestamp": "2022-06-02T21:55:29.046Z"
+  },
+  {
+    "type": "message",
+    "serviceUrl": "http://localhost:4274",
+    "channelId": "emulator",
+    "from": {
+      "id": "34d71cb0-e2ba-11ec-baca-81c9907c200c",
+      "name": "Bot",
+      "role": "bot"
+    },
+    "conversation": {
+      "id": "99fd8db0-e2bd-11ec-baca-81c9907c200c|livechat"
+    },
+    "recipient": {
+      "id": "4d4680e0-7ad3-4db3-b821-b8c18412c16a",
+      "role": "user"
+    },
+    "locale": "en-US",
+    "text": "Certainly.",
+    "inputHint": "acceptingInput",
+    "replyToId": "b56fa820-e2be-11ec-8587-718ad59c0fba",
+    "id": "b7bc5740-e2be-11ec-8587-718ad59c0fba",
+    "localTimestamp": "2022-06-03T00:55:29+03:00",
+    "timestamp": "2022-06-02T21:55:29.587Z"
+  }
+]
