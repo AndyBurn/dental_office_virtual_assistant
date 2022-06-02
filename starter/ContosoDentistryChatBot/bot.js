@@ -18,10 +18,10 @@ class DentaBot extends ActivityHandler {
         this.QnAMaker = new QnAMaker(configuration.QnAConfiguration, qnaOptions);
        
         // create a DentistScheduler connector
-        this.intentRecognizer = new IntentRecognizer(configuration.LuisConfiguration);
+        this.DentistScheduler = new DentistScheduler(configuration.SchedulerConfiguration);
 
         // create a IntentRecognizer connector
-
+        this.IntentRecognizer = new IntentRecognizer(configuration.LuisConfiguration);
 
         this.onMessage(async (context, next) => {
             
@@ -29,7 +29,7 @@ class DentaBot extends ActivityHandler {
             // don't forget 'await'
 
             // Send user input to LUIS
-            const LuisResult = await this.intentRecognizer.executeLuisQuery(context);    
+            const LuisResult = await this.IntentRecognizer.executeLuisQuery(context);    
 
             // determine which service to respond with based on the results from LUIS //
 
