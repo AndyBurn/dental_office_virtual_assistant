@@ -4,6 +4,7 @@
 const { ActivityHandler, MessageFactory } = require('botbuilder');
 
 const { QnAMaker } = require('botbuilder-ai');
+
 const DentistScheduler = require('./dentistscheduler');
 const IntentRecognizer = require("./intentrecognizer")
 
@@ -17,32 +18,19 @@ class DentaBot extends ActivityHandler {
         this.QnAMaker = new QnAMaker(configuration.QnAConfiguration, qnaOptions);
        
         // create a DentistScheduler connector
-      
+        this.intentRecognizer = new IntentRecognizer(configuration.LuisConfiguration);
+
         // create a IntentRecognizer connector
 
 
         this.onMessage(async (context, next) => {
-            // send user input to QnA Maker and collect the response in a variable
-            const qnaResults = await this.QnAMaker.getAnswers(context);
-            // If an answer was received from QnA Maker, send the answer back to the user.
-            if(qnaResults[0]){
-                console.log(qnaResults[0])
-                await context.sendActivity(`${qnaResults[0].answer}`);
-            }
-            else{
-                // If no answers were returned from QnA Amker, reply with help.
-                await context.sendActivity(`I'm not sure`
-                        + 'I found an answer to your question'
-                        + `You can ask me questions about electric vehicles like 
-                        "how can I charge my car?"`);
-            }
-        
-            // don't forget to use the 'await' keyword
-            await next();
-
+            
             // send user input to IntentRecognizer and collect the response in a variable
             // don't forget 'await'
-                     
+
+            // Send user input to LUIS
+            const LuisResult = await this.intentRecognizer.executeLuisQuery(context);    
+
             // determine which service to respond with based on the results from LUIS //
 
             // if(top intent is intentA and confidence greater than 50){
@@ -52,14 +40,63 @@ class DentaBot extends ActivityHandler {
             //  return;
             // }
             // else {...}
+
+            // Determine which service to respond with 
+            if(LuisResult.luisResult.prediction.topIntent === "ScheduleAppointment" && 
+                LuisResult.intents.ScheduleAppointment.score > .6 &&
+                LuisResult.entities.$instance &&
+                LuisResult.entities.$instance.time &&
+                LuisResult.entities.$instance.time[0]
+            ){
+                const time = LuisResult.entities.$instance.time[0].text;
+                // Call api with time entity info
+                const getAppointmentTime = "You can book an appointment at " + time + ".";
+                console.log(getAppointmentTime)
+                await context.sendActivity(getAppointmentTime);
+                await next();
+                return;
+            }
+
+            if(LuisResult.luisResult.prediction.topIntent === "GetAvailability" && 
+                LuisResult.intents.GetAvailability.score > .6 &&
+                LuisResult.entities.$instance &&
+                LuisResult.entities.$instance.date &&
+                LuisResult.entities.$instance.date[0]
+            ){
+                const date = LuisResult.entities.$instance.date[0].text;
+                // Call api with date entity info
+                const getAvailabilityDate = "The dentist will be available on " + date + ".";
+                console.log(getAvailabilityDate)
+                await context.sendActivity(getAvailabilityDate);
+                await next();
+                return;
+            }
              
             await next();
+
+             // send user input to QnA Maker and collect the response in a variable
+             const qnaResults = await this.QnAMaker.getAnswers(context);
+             // If an answer was received from QnA Maker, send the answer back to the user.
+             if(qnaResults[0]){
+                 console.log(qnaResults[0])
+                 await context.sendActivity(`${qnaResults[0].answer}`);
+             }
+             else{
+                 // If no answers were returned from QnA Amker, reply with help.
+                 await context.sendActivity(`I'm not sure `
+                         + 'I found an answer to your question. '
+                         + `You can ask me questions about your dental session like 
+                         "when can I see the dentist?"`);
+             }
+         
+             // don't forget to use the 'await' keyword
+             await next();
     });
 
         this.onMembersAdded(async (context, next) => {
         const membersAdded = context.activity.membersAdded;
         //write a custom greeting
-        const welcomeText = 'Welcome to Contoso Dentistry. You can ask me any questions about your dental session.';
+        const welcomeText = 'Welcome to Contoso Dentistry. You can ask me any question about your dental session.';
         for (let cnt = 0; cnt < membersAdded.length; ++cnt) {
             if (membersAdded[cnt].id !== context.activity.recipient.id) {
                 await context.sendActivity(MessageFactory.text(welcomeText, welcomeText));
