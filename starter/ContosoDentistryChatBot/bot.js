@@ -86,7 +86,7 @@ class DentaBot extends ActivityHandler {
                  await context.sendActivity(`I'm not sure `
                          + 'I found an answer to your question. '
                          + `You can ask me questions about your dental session like 
-                         "when can I see the dentist?"`);
+                         "can I book an appointment tomorrow at 11:45 am?"`);
              }
          
              // don't forget to use the 'await' keyword
